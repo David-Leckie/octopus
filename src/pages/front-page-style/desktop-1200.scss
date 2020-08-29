@@ -1,0 +1,90 @@
+
+#topSplitBackgroundImageWrapper {
+    position: fixed;
+    top: 0rem;
+    height: 14.7rem;
+    //box-shadow: -2px 0px 15px $colourB2;
+}
+#headerElements {
+    position: fixed;
+    top: 0px;
+    //background: pink;
+    margin-top: 0rem;
+    z-index: 3;
+}
+#octopusLogoTitle {
+    left: 1.4rem;
+    top: 1.3rem;
+    width: 15.2rem;
+    height: 6.9rem;
+}
+#addMySiteButton {
+    top: 5rem;
+    left: 83%
+}
+#settingsIcon {
+    right: 2.5rem;
+    top: 1.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+#searchPanelBackground {
+    position: fixed;
+    top: 9.5rem;
+    height: 0rem;
+    margin: 0rem 0 0 0;
+    background: pink;
+}
+#searchPanelBackground.siteslistActive {
+    height: 6rem;
+}
+#searchBoxWrapper {
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    margin: 4rem 0 0 17.5%;
+}
+#searchTypeMenuWrapper {
+    position: fixed;
+    margin: 3.7rem 0 0 19.2%
+}
+#toolsMenuIcon {
+    position: fixed;
+    margin: 14.7rem 0rem 0rem 8rem;
+    //background: $colourA;
+    z-index: 2;
+    visibility: hidden;
+}
+#sitesList {
+    left: 19%;
+    top: 14.7rem;
+}
+#categoriesMenuIconBox {
+    position: fixed;
+    top: 0rem;
+    margin: 14.7rem 0 0 90%;
+    //background-color: $colourA;
+    visibility: hidden;
+}
+#categoriesMenuIcon {
+    //fill: $colourB;
+}
+.site {
+    //margin: 1.5rem 0rem 0rem 0rem;
+    padding: 0.8rem 0rem 0.2rem 0.5rem;
+    font-size: 1.25rem * $largeText;
+}
+.siteItemTitle {
+    font-size: 1.75rem * $largeText;
+}
+  .siteItemURL {
+    font-size: 1.25rem * $largeText; 
+}
+.siteItemFlagWrapper {
+    font-size: 1.15rem * $largeText;
+    padding: 0.6rem 0rem 2rem 4.6rem;
+  }
+  .siteFlagIcon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }

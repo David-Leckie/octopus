@@ -1,0 +1,30 @@
+@import 'base-small-mobile-320.scss';
+//@import 'front-page-theme-defaults.scss';
+
+/*@import '../../themes/LightPhoto/Wave/waveUniqueElements.scss';
+@import '../../themes/LightPhoto/WaveBanner/wave-bannerUniqueElements.scss';
+@import '../../themes/LightBasic/MonoLight/mono-lightUniqueElements.scss';
+@import '../../themes/DarkBasic/MonoDark/mono-darkUniqueElements.scss';
+@import '../../themes/LightArt/Hokusai/hokusaiUniqueElements.scss';
+@import '../../themes/LightArt/Graffiti/graffitiUniqueElements.scss';
+@import '../../themes/LightArt/Monet/monetUniqueElements.scss';
+@import '../../themes/LightArt/Japan/japanUniqueElements.scss';
+@import '../../themes/LightArt/OKeeffe/okeeffeUniqueElements.scss';
+@import '../../themes/LightArt/Pop/popUniqueElements.scss';*/
+
+@media only screen and (min-width: 400px) {
+    @import 'mobile-400.scss';
+    }
+/*@media only screen and (min-width: 600px) {
+    @import 'tablet-portrait-600.scss';
+    }
+@media only screen and (min-width: 900px) {
+    @import 'tablet-landscape-900.scss';
+}
+@media only screen and (min-width: 1200px) {
+    @import 'desktop-1200.scss';
+}*/
+/*@import 'sr-tablet-portrait.css' (min-width: 600px);
+@import 'sr-tablet-landscape.css' (min-width:900px);
+@import 'sr-desktop.css' (min-width:1200px);
+@import 'sr-large-desktop.css' (min-width:1500px);*/

@@ -1,0 +1,226 @@
+
+#frontPageRoot {
+  position: absolute;
+  width: 100vw;
+}
+#stickyElementsRestrainer {
+  position: absolute;
+  height: auto;
+  width: 100vw;
+}
+#backgroundImageWrapper {
+  position: sticky;
+  top: calc(var(--headerElementsHeight) * -1);
+  width: 100%;
+  height: 0rem;
+}
+#topSplitBackgroundImageWrapper {
+  position: sticky;
+  top: calc(var(--headerElementsHeight) * -1);
+  overflow: hidden;
+  width: 100%;
+  height: var(--topSplitBackgroundHeight);
+  z-index: 2;
+}
+#topSplitBackgroundImageWrapper.beforeResults {
+  height: var(--topSplitBackgroundHeightBeforeResults);
+}
+#headerElements {
+  background: var(--banner);
+  position: sticky;
+  top: calc(var(--headerElementsHeight) * -1);
+  width: 100%;
+  height: var(--headerElementsHeight);
+  margin-top: calc(var(--topSplitBackgroundHeight) * -1);
+  z-index: 5;
+}
+#headerElements.beforeResults {
+  margin-top: calc(var(--topSplitBackgroundHeightBeforeResults) * -1);
+}
+#octopusLogoTitle {
+  fill: var(--topLogoColour);
+  stroke: var(--topLogoColour);
+  position: absolute;
+  width: 11.6rem;
+  height: 5.8rem;
+  margin: 0.8rem 0rem 0rem 0.8rem;
+  z-index: 4;
+  /*font-size: max(18px);
+  font-weight: bold;
+  letter-spacing: max(0.5px);
+  line-height: max(26px);
+  color: var(--topLogoColour);*/
+  cursor: pointer;
+}
+#addMySiteButton {
+  color: var(--button1Content);
+  background: var(--button1Background);
+  border: var(--button1Border);
+  box-shadow: var(--button1BoxShadow);
+  box-sizing: border-box;
+  position: absolute;
+  left: 62%;
+  top: 4.6rem;
+  margin: -2rem 0rem 0rem -4.2rem;
+  padding: 0.6rem 0.7rem 0.5rem 2.6rem;
+  border-radius: calc(var(--baseBorderRadius)*0.6);
+  font-size: calc(1.1rem * var(--largeText));
+  letter-spacing: 0.04rem;
+  z-index: 4;
+  cursor: pointer;
+}
+#addIcon {
+  fill: var(--button1Content);
+  stroke: none;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0.2rem;
+  top: 50%;
+  margin-top: -1rem;
+  width: 2rem;
+  height: 2rem;
+}
+#settingsIcon {
+  fill: var(--topLogoColour);
+  stroke: none;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  z-index: 6;
+}
+#searchElements {
+  background: var(--banner);
+  box-sizing: border-box;
+  position: sticky;
+  top: 0rem;
+  width: 100%;
+  height: var(--searchElementsHeight);
+  border-style: none none solid none;
+  border-color: transparent;
+  border-width: 0.1rem;
+  z-index: 4;
+}
+#searchElements.beforeResults {
+  border-color: var(--searchElementsBorderPre);
+  box-shadow: var(--searchElementsBoxShadowPre);
+}
+#searchElements.sitesListActive {
+  border-style: none;
+  box-shadow: none;
+}
+#searchBoxWrapper {
+  background: var(--input);
+  border-color: var(--searchBoxUnderlineColour);
+  box-sizing: border-box;
+  position: absolute;
+  width: 84%;
+  height: 3.8rem;
+  max-width: 57rem;
+  margin: 1.2rem 0 0 9%;
+  border-radius: calc(var(--baseBorderRadius)*1);
+  border-style: none none solid none;
+  border-width: 0.1rem;
+}
+#searchBoxWrapper.scrolled {
+  width: 92%;
+  max-width: 57rem;
+  margin: 1.2rem 0 0 4%;
+}
+#searchIcon {
+  fill: var(--onSurfaceBold);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0.9rem;
+  top: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+#searchIconOctopusLogo {
+  fill: var(--onSurfaceBold);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0.6rem;
+  top: 0.6rem;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+#sortPanelBackground {
+  background: var(--banner);
+  box-shadow: var(--boxShadowBanner);
+  border-color: var(--darkBorderColourOnly);
+  box-sizing: border-box;
+  position: sticky;
+  margin-top: calc(var(--bannerOffset) * -1);
+  top: calc(var(--searchElementsHeight) + calc(var(--bannerOffset) * -1));
+  height: var(--sortPanelHeight);
+  z-index: 3;
+  border-style: none none solid none;
+  border-width: 0.1rem;
+}
+#sitesListDummyWrapper {
+  box-sizing: border-box;
+  position: sticky;
+  width: 100%;
+  height: auto;
+  padding-top: 0rem;
+  min-height: 100vh;
+  top: 0rem;
+  z-index: -2;
+}
+#sitesListWrapper {
+  background: var(--sitesListBackground);
+  box-sizing: border-box;
+  position: absolute;
+  width: 98%;
+  max-width: 62rem;
+  padding: 0 0 1rem 0;
+  border-radius: 0rem 0rem calc(var(--baseBorderRadius)*1) calc(var(--baseBorderRadius)*1);
+  height: auto;
+  min-height: 100vh;
+  top: var(--topSplitBackgroundHeight);
+  left: 1%;
+  //z-index: 2;
+}
+#sitesListWrapper.beforeResults {
+  top: var(--topSplitBackgroundHeightBeforeResults);
+  background: var(--sitesListBackgroundBeforeResults);
+}
+#returnToTopButton {
+  background: var(--surface5);
+  border: var(--darkBorder);
+  box-shadow: var(--boxShadowStandard);
+  stroke: none;  
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: calc(var(--baseBorderRadius)*0.75);
+  z-index: 5;
+  cursor: pointer;
+}
+#returnToTopIcon {
+  fill: var(--onSurface);
+  position: absolute;
+  left: 0.2rem;
+  bottom: 0.2rem;
+  width: 3.4rem;
+  height: 3.4rem;
+}
+#safeLogo {
+  fill: var(--onSurface);
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0.15;
+  visibility: hidden;
+}
+#safeLogo.beforeResults {
+  visibility: visible;
+}
